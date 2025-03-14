@@ -1,0 +1,113 @@
+:root {
+    --primary-color: #007dbb;
+    --text-color: #ffffff;
+    --input-bg-color: #EFEFEF;
+    --main-font: "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    background-image: url('/static/clima_app/assets/bg-clima.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 4em;
+    text-align: center;
+    padding: 2em 0;
+    transition: ease-in-out 0.3s;
+    color: var(--text-color);
+}
+
+#main{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#input-search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+#cidade{
+    width: 100%;
+    max-width: 672px;
+    background: var(--input-bg-color);
+    border-radius: 10px 0px 0px 10px;
+    height: 40px;
+    border: none;
+    padding-left: 24px;
+    font-size: 14px;
+}
+
+#cidade:focus-visible {
+    outline: none;
+}
+
+.btn-search{
+    width: 119px;
+    background: var(--primary-color);
+    border-radius: 0px 8px 8px 0px;
+    border: none;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.btn-search:hover{
+    letter-spacing: 2px;
+}
+
+.text-clima-em{
+    padding: 2em 0;
+}
+
+.text-cidade{
+    color: var(--text-color);
+    font-size: 2em;
+    padding-bottom: 1em;
+}
+
+.list-info{
+    list-style: none;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    gap: 8px;
+}
+
+.Erro{
+    color: var(--text-color);
+    padding: 2em 0;
+}

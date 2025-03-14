@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clima da Cidade</title>
+<link rel="icon" href="/static/clima_app/assets/blue_a.ico" type="image/x-icon">
+<link rel="stylesheet" href="{% static 'clima_app/css/main-page.css' %}">
+</head>
+
+<body id="container">
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1 class="title">Consultar Clima</h1>
+    </header>
+
+    <main id="main">
+        <!-- Formulário de Busca -->
+        <section id="input-search">
+            <form method="GET" class="form">
+                <input type="text" id="cidade" name="cidade" class="placeholder" 
+                       placeholder="Digite o nome da cidade" required autofocus>
+                <button type="submit" class="btn-search">Buscar</button>
+            </form>
+        </section>
+
+        <!-- Exibição dos Dados do Clima -->
+        {% if clima %}
+            {% if clima.erro %}
+                <!-- Mensagem de Erro -->
+                <section class="Erro">
+                    <strong>Erro:</strong> {{ clima.erro }}
+                </section>
+            {% else %}
+                <!-- Informações do Clima -->
+                <section class="text-clima-em">
+                    <h3 class="text-cidade">Clima em {{ clima.cidade }}</h3>
+                    <ul class="list-info">
+                        <li><strong>Temperatura:</strong> {{ clima.temperatura }}</li>
+                        <li><strong>Sensação Térmica:</strong> {{ clima.sensacao_termica }}</li>
+                        <li><strong>Umidade:</strong> {{ clima.umidade }}</li>
+                        <li><strong>Descrição:</strong> {{ clima.descricao }}</li>
+                    </ul>
+                </section>
+            {% endif %}
+        {% endif %}
+    </main>
+
+    <footer class="text-footer">
+        
+    </footer>
+
+</body>
+
+</html>
