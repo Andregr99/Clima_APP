@@ -25,7 +25,7 @@ Aplicação desenvolvida com **Django** e **Django REST Framework** para consumi
 
 git clone https://github.com/Andregr99/Clima_APP.git
 
-No seu terminal Digite:
+No seu terminal digite:
 cd clima_project
 
 2️⃣ Crie e ative um ambiente virtual:
@@ -61,4 +61,4 @@ python manage.py runserver
 Acesse no navegador:
 🔹 Clique no link "http://127.0.0.1:8000/" no seu terminal enquanto segura a tecla Ctrl 🤩🚀🚀🚀
 
-**Iniciando com Django REST Framework. Como estou iniciando minha jornada neste framework, feedbacks e sugestões são muito bem-vindos guys. Para dúvidas ou colaborações, entre em contato comigo pelo LinkedIn 🤩🤝**
+**Como estou iniciando minha jornada neste framework, feedbacks e sugestões são muito bem-vindos guys. Para dúvidas ou colaborações, entre em contato comigo pelo LinkedIn 🤩🤝**
