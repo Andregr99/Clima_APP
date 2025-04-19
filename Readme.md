@@ -60,5 +60,3 @@ python manage.py runserver
 
 Acesse no navegador:
 🔹 Clique no link "http://127.0.0.1:8000/" no seu terminal enquanto segura a tecla Ctrl 🤩🚀🚀🚀
-
-**Como estou iniciando minha jornada neste framework, feedbacks e sugestões são muito bem-vindos guys. Para dúvidas ou colaborações, entre em contato comigo pelo LinkedIn 🤩🤝**
